@@ -15,32 +15,10 @@ a {
 ul {
   list-style: none;
 }
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-}
-@media only screen and (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-}
-@media only screen and (min-width: 992px) {
-  .container {
-    width: 970px;
-  }
-}
-@media only screen and (min-width: 1200px) {
-  .container {
-    width: 1170px;
-  }
-}
 
 /* Start Header */
-.header {
-  background-color: #17111e;
-}
+/* fix */
+
 .header a {
   font-weight: bold;
   background: linear-gradient(90deg, #9f6cbf, #dcb7de);
@@ -48,9 +26,13 @@ ul {
   color: transparent;
   background-clip: text;
 }
+/* fix */
+
 .header ul li {
   margin-left: 20px;
 }
+/* fix */
+
 .header .searchIcon {
   font-weight: bold;
   background: linear-gradient(90deg, #9f6cbf, #dcb7de);
@@ -58,20 +40,25 @@ ul {
   color: transparent;
   background-clip: text;
 }
+
+/* fix */
 .header .menu {
   display: none;
 }
 @media (max-width: 767px) {
   .header .menu {
     display: flex;
-    align-items: center;
   }
 }
 /* End Header */
 /* Start subHeader */
+
+/* fix */
 .subHeader ul li {
   position: relative;
 }
+/* fix */
+
 .subHeader ul li:not(:last-child):before {
   content: "";
   position: absolute;
@@ -84,22 +71,25 @@ ul {
 }
 /* End subHeader */
 /* Start Landing */
+/* fix */
 .landing .container ul li {
   color: #bab8bc;
 }
+/* fix */
 .landing .images {
   max-width: 100%;
 }
+/* fix */
 .landing .image img {
   border-radius: 5px;
 }
-/* .landing .image {
-  width: 845px;
-} */
+/* fix */
 .landing .info h4 {
   position: relative;
   font-size: 20px;
 }
+/* fix */
+
 .landing .info h4::before {
   position: absolute;
   content: "";
@@ -163,35 +153,24 @@ ul {
 /* End Landing */
 /* Start Contant */
 
-.contant .container .holder .cards::-webkit-scrollbar {
+.contant .cards::-webkit-scrollbar {
   /* width: 10px; Width of the entire scrollbar */
   height: 15px;
 }
 
-.contant .container .holder .cards::-webkit-scrollbar-thumb {
+.contant .cards::-webkit-scrollbar-thumb {
   background-color: black; /* Color of the scrollbar thumb */
   border-radius: 10px; /* Round the edges */
 }
-.contant .container .holder .cards::-webkit-scrollbar-track {
+.contant .cards::-webkit-scrollbar-track {
   background: transparent; /* Color of the scrollbar track */
   border-radius: 10px; /* Round the edges */
   border: 1px solid black;
 }
-/* .contant .container {
-  position: relative;
+
+.contant .cards {
+  height: 420px;
 }
-.contant .container .holder {
-  position: relative;
-}
-.contant .container .holder::before {
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 100%;
-  background: linear-gradient(90deg, #9f6cbf, #dcb7de);
-  right: -16px;
-  z-index: 12;
-} */
 .contant .card {
   min-width: 240px;
   transition: 0.3s;
@@ -203,6 +182,14 @@ ul {
   margin-right: 60px;
 }
 .contant .card:first-child {
+  box-shadow: none;
+  left: 0;
+}
+.contant .card:not(:first-child) {
+  margin-left: -111px;
+  box-shadow: -3rem 0 3rem -2rem #000;
+}
+/* .contant .card:first-child {
   box-shadow: none;
   left: 0;
 }
@@ -245,7 +232,7 @@ ul {
   box-shadow: -28px 0 11px -1px rgba(0, 0, 0, 0.2);
   position: relative;
   left: -480px;
-}
+} */
 /* End Contant */
 /* Start Subscribe */
 .subscribe .email {
