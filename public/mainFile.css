@@ -1,0 +1,277 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Cairo", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/* Start Header */
+.header {
+  background-color: #17111e;
+}
+.header a {
+  font-weight: bold;
+  background: linear-gradient(90deg, #9f6cbf, #dcb7de);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+}
+.header ul li {
+  margin-left: 20px;
+}
+.header .searchIcon {
+  font-weight: bold;
+  background: linear-gradient(90deg, #9f6cbf, #dcb7de);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+}
+.header .menu {
+  display: none;
+}
+@media (max-width: 767px) {
+  .header .menu {
+    display: flex;
+    align-items: center;
+  }
+}
+/* End Header */
+/* Start subHeader */
+.subHeader ul li {
+  position: relative;
+}
+.subHeader ul li:not(:last-child):before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 3px;
+  background: linear-gradient(90deg, #9f6cbf, #dcb7de);
+  right: -5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+/* End subHeader */
+/* Start Landing */
+.landing .container ul li {
+  color: #bab8bc;
+}
+.landing .images {
+  max-width: 100%;
+}
+.landing .image img {
+  border-radius: 5px;
+}
+/* .landing .image {
+  width: 845px;
+} */
+.landing .info h4 {
+  position: relative;
+  font-size: 20px;
+}
+.landing .info h4::before {
+  position: absolute;
+  content: "";
+  width: 25%;
+  height: 1px;
+  background: linear-gradient(90deg, #9f6cbf, #dcb7de);
+  left: 0;
+  bottom: -10px;
+}
+.landing .info .desc {
+  position: relative;
+}
+.landing .info .desc::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: -10px;
+  width: 35%;
+  height: 1px;
+  background: linear-gradient(90deg, #9f6cbf, #dcb7de);
+}
+.landing .info .text {
+  font-size: 16px;
+  width: 295px;
+  height: 133px;
+  font-weight: 400;
+}
+.landing .info .fst {
+  position: relative;
+}
+.landing .info .fst::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(90deg, #9f6cbf, #dcb7de);
+  width: 25%;
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+}
+.landing .info .des {
+  position: relative;
+}
+.landing .info .des::before {
+  position: absolute;
+  content: "";
+  background: linear-gradient(90deg, #9f6cbf, #dcb7de);
+  width: 55%;
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+}
+.landing .info .sub .down {
+  background: linear-gradient(90deg, #9f6cbf, #dcb7de);
+  color: white;
+}
+.landing .info .sub .btun {
+  border: 1px solid transparent;
+  border-image: linear-gradient(90deg, #9f6cbf, #dcb7de) 1;
+  border-radius: 5px;
+}
+/* End Landing */
+/* Start Contant */
+
+.contant .container .holder .cards::-webkit-scrollbar {
+  /* width: 10px; Width of the entire scrollbar */
+  height: 15px;
+}
+
+.contant .container .holder .cards::-webkit-scrollbar-thumb {
+  background-color: black; /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Round the edges */
+}
+.contant .container .holder .cards::-webkit-scrollbar-track {
+  background: transparent; /* Color of the scrollbar track */
+  border-radius: 10px; /* Round the edges */
+  border: 1px solid black;
+}
+/* .contant .container {
+  position: relative;
+}
+.contant .container .holder {
+  position: relative;
+}
+.contant .container .holder::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 100%;
+  background: linear-gradient(90deg, #9f6cbf, #dcb7de);
+  right: -16px;
+  z-index: 12;
+} */
+.contant .card {
+  min-width: 240px;
+  transition: 0.3s;
+  position: relative;
+  overflow-x: visible;
+}
+.contant .card:hover {
+  transform: translate(-0.5rem, -1rem) rotate(3deg);
+  margin-right: 60px;
+}
+.contant .card:first-child {
+  box-shadow: none;
+  left: 0;
+}
+.contant .card:nth-child(2) {
+  box-shadow: -28px 0 11px -1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: -60px;
+}
+.contant .card:nth-child(3) {
+  box-shadow: -28px 0 11px -1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: -120px;
+}
+.contant .card:nth-child(4) {
+  box-shadow: -28px 0 11px -1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: -180px;
+}
+.contant .card:nth-child(5) {
+  box-shadow: -28px 0 11px -1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: -240px;
+}
+.contant .card:nth-child(6) {
+  box-shadow: -28px 0 11px -1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: -300px;
+}
+.contant .card:nth-child(7) {
+  box-shadow: -28px 0 11px -1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: -360px;
+}
+.contant .card:nth-child(8) {
+  box-shadow: -28px 0 11px -1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: -420px;
+}
+.contant .card:nth-child(9) {
+  box-shadow: -28px 0 11px -1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  left: -480px;
+}
+/* End Contant */
+/* Start Subscribe */
+.subscribe .email {
+  background: transparent;
+  border: 1px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #9f6cbf, #dcb7de);
+  border-right: none;
+  border-radius: 15px;
+}
+.subscribe .buttom {
+  background: linear-gradient(90deg, #9f6cbf, #dcb7de);
+}
+/* End Subscribe */
+/* Start Footer */
+.footer {
+  background-color: #17111e;
+}
+.footer a {
+  font-weight: bold;
+  background: linear-gradient(90deg, #9f6cbf, #dcb7de);
+  -webkit-background-clip: text;
+  color: transparent;
+  background-clip: text;
+}
+.footer .btn {
+  background: linear-gradient(90deg, #9f6cbf, #dcb7de);
+}
+/* End Footer */
