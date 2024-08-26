@@ -600,6 +600,10 @@ video {
   }
 }
 
+.relative {
+  position: relative;
+}
+
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -631,6 +635,10 @@ video {
 
 .-mt-1 {
   margin-top: -0.25rem;
+}
+
+.-mt-10 {
+  margin-top: -2.5rem;
 }
 
 .mb-10 {
@@ -733,16 +741,16 @@ video {
   height: 3rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
 .h-\[420px\] {
   height: 420px;
 }
 
-.h-\[100000px\] {
-  height: 100000px;
+.h-full {
+  height: 100%;
+}
+
+.h-10 {
+  height: 2.5rem;
 }
 
 .w-40 {
@@ -764,6 +772,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.min-w-60 {
+  min-width: 15rem;
 }
 
 .max-w-sm {
@@ -834,16 +846,24 @@ video {
   gap: 2rem;
 }
 
+.overflow-auto {
+  overflow: auto;
+}
+
 .overflow-hidden {
   overflow: hidden;
 }
 
-.overflow-x-auto {
-  overflow-x: auto;
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .overflow-x-scroll {
   overflow-x: scroll;
+}
+
+.text-balance {
+  text-wrap: balance;
 }
 
 .rounded {
@@ -865,6 +885,11 @@ video {
 
 .border-b-2 {
   border-bottom-width: 2px;
+}
+
+.bg-\[\#17111e\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 17 30 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -889,11 +914,6 @@ video {
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-\[\#17111e\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 17 30 / var(--tw-bg-opacity));
 }
 
 .p-3 {
@@ -1030,6 +1050,11 @@ video {
   font-weight: 100;
 }
 
+.text-\[\#bab8bc\] {
+  --tw-text-opacity: 1;
+  color: rgb(186 184 188 / var(--tw-text-opacity));
+}
+
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
@@ -1061,6 +1086,14 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+}
+
+.hover\:block:hover {
+  display: block;
+}
+
+.hover\:overflow-visible:hover {
+  overflow: visible;
 }
 
 @media (min-width: 768px) {
