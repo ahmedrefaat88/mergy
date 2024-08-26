@@ -53,6 +53,29 @@ ul {
     display: flex;
   }
 }
+@media (max-width: 767px) {
+  .header .tabs {
+    display: none;
+  }
+  .header .menu:hover + .tabs {
+    display: flex;
+    flex-direction: column;
+    top: 17%;
+    position: absolute;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.575);
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .header ul {
+    display: block;
+  }
+  .header ul li {
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+}
 /* End Header */
 /* Start subHeader */
 /* fix */

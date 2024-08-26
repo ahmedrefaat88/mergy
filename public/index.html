@@ -16,7 +16,10 @@
           <img src="img/Logo.png" alt="Logo" />
           <a class="text-2xl font-bold ml-4" href="#">Mergy design</a>
         </div>
-        <div class="tabs hidden md:flex items-center text-white">
+        <div class="menu hidden">
+          <i class="fa-solid fa-bars text-3xl text-white"></i>
+        </div>
+        <div class="tabs md:flex items-center text-white">
           <div class="searchIcon text-xl font-bold">
             <i class="fa-solid fa-magnifying-glass"></i>
           </div>
@@ -35,9 +38,6 @@
             >+</span
           >
           <img class="ml-5" src="img/radio.png" alt="" />
-        </div>
-        <div class="menu hidden">
-          <i class="fa-solid fa-bars text-3xl text-white"></i>
         </div>
       </div>
     </div>
@@ -465,7 +465,9 @@
     <div class="design mt-10 mb-16">
       <div class="container">
         <h1 class="my-16 text-3xl text-center">Related Designs</h1>
-        <div class="cards grid grid-cols-1 lg:grid-cols-4 gap-6 mb-10">
+        <div
+          class="cards grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 mb-10 items-center"
+        >
           <div class="max-w-sm rounded overflow-hidden shadow-lg">
             <img
               class="w-full"
@@ -595,14 +597,14 @@
       <div class="mail flex justify-center pb-10">
         <form action="">
           <input
-            class="email w-96 h-12 bg-transparent p-5 outline-none border"
+            class="email max-w-60 md:min-w-96 h-12 bg-transparent p-5 outline-none border"
             type="email"
             name=""
             id=""
             placeholder="E-mail"
           />
           <input
-            class="buttom cursor-pointer text-white font-thin rounded-r h-12 w-40 -ml-1"
+            class="buttom cursor-pointer text-white font-thin rounded-r h-12 w-36 -ml-1"
             type="button"
             value="Subscribe"
           />
@@ -612,7 +614,7 @@
     <!-- End Subscribe -->
     <!-- Start Footer -->
     <div class="footer bg-[#17111e]">
-      <div class="container grid grid-cols-3 pb-12">
+      <div class="container grid md:grid-cols-2 gap-2 lg:grid-cols-3 pb-12">
         <div class="col1">
           <div class="logo flex items-center pt-10">
             <img src="img/Logo.png" alt="" />
@@ -629,7 +631,7 @@
           <p class="text-white my-5">Privecy Policy</p>
         </div>
         <div
-          class="col2 text-balance text-white pt-10 flex flex-col justify-between items-center"
+          class="col2 text-white pt-10 flex flex-col md:justify-between md:items-center"
         >
           <div>
             <ul class="cursor-pointer">
